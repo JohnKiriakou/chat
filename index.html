@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <div class="connection-controls">
+                <h3>Connect</h3>
+                <input type="text" id="remote-id" placeholder="Friend's Peer ID">
+                <button id="connect-btn">Connect</button>
+                <div id="status" class="status-offline">Disconnected</div>
+                <button id="copy-link-btn" style="margin-top: 10px;">Copy Invite Link</button>
+            </div>
+
+            <div class="user-profile" id="change-id-trigger">
+                <div class="avatar"></div>
+                <div class="user-info">
+                    <span class="label">My ID (Click to change)</span>
+                    <strong id="my-id">...</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-window">
+            <div id="messages"></div>
+            <div class="input-area">
+                <input type="text" id="chat-input" placeholder="Type a message..." disabled>
+                <button id="send-btn" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/peerjs@1.5.2/dist/peerjs.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
