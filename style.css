@@ -194,3 +194,39 @@ body {
     background: #202225;
     border-radius: 4px;
 }
+
+#messages { 
+    flex-grow: 1; 
+    padding: 20px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    display: flex; 
+    flex-direction: column; 
+    gap: 12px; 
+}
+
+.message { 
+    padding: 10px 15px; 
+    border-radius: 18px; 
+    max-width: 80%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+}
+
+.message img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 5px;
+    display: block;
+}
+
+.file-link {
+    color: #00aff4;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
